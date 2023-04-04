@@ -1,31 +1,32 @@
 RED = "red"
 BLUE = "blue"
 YELLOW = "yellow"
+check=1
 
 
-color1 = input("Enter the color number 1: ")
-color2 = input("Enter the color number 2 : ")
+a = input("Enter the color number 1: ")
+b = input("Enter the color number 2 : ")
 
 
-if color1 not in (RED, BLUE, YELLOW):
+if a not in (RED, BLUE, YELLOW):
     print("Error: Invalid Color1")
-elif color2 not in (RED, BLUE, YELLOW):
+elif b not in (RED, BLUE, YELLOW):
     print("Error: Invalid Color2")
-elif color1 == color2:
+elif a == b:
     print("Error: The two colors you entered are same")
 else:
-    if color1 == RED:
-        if color2 == BLUE:
+    if a == RED:
+        if b == BLUE:
             print("Purple")
         else:
             print("Orange")
-    elif color1 == BLUE:
-        if color2 == RED:
+    elif a == BLUE:
+        if b == RED:
             print("Purple")
         else: 
             print("Green")
     else: 
-        if color2 == RED:
+        if b == RED:
             print("Orange")
         else:
             print("Green")
